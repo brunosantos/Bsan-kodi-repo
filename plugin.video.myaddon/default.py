@@ -58,7 +58,7 @@ def appendPydevRemoteDebugger():
         sys.exit(1)
 
 
-appendPydevRemoteDebugger()
+# appendPydevRemoteDebugger()
 
 addon_id = 'plugin.video.direto'
 addon = Addon(addon_id, sys.argv)
