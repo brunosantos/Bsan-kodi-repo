@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.kodi.caribbean" name="Caribbean repository" version="0.0.3" provider-name="bsan">
+<addon id="repository.kodi.caribbean" name="Caribbean repository" version="0.0.4" provider-name="bsan">
     <extension point="xbmc.addon.repository" name="Caribbean Add-on Repository">
         <info compressed="false">http://raw.github.com/brunosantos/Bsan-kodi-repo/master/addons.xml</info>
         <checksum>http://raw.github.com/brunosantos/Bsan-kodi-repo/master/addons.xml.md5</checksum>
