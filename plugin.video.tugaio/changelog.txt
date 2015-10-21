@@ -1,0 +1,48 @@
+v0.1.1
+- Comunicado.
+
+v0.1.0
+- Correção de procura de Stream e de Legenda.
+- Re-configuração para obter informação de páginas.
+
+v0.0.9
+- Correção de listagem de Séries
+- Correção de lsitagem por Generos
+- Desactivado a opção de escolha de servidor. -> Só existe um neste momento no site, quando tiverem mais, será reposto!
+- Desactivado (temporariamente) as informações media, tanto de Séries como Filmes. -> Erros com API.
+
+v0.0.8
+- Correção da pasta de Download para pasta de rede
+- Guarda informação de um Filme ou Episodio parado a qualquer momento, pergunta se pertende continuar na proxima vizualização!
+- Problemas na busca de Filmes e Series resolvido. 
+
+v0.0.7
+- Re-branding, obrigado johnny88
+- Correção de API de filmes, desativado de momento! 
+
+v0.0.6
+- Re-branding, obrigado johnny88
+- Escolha de servidor no inicio da sessão
+- Escolha de servidor no inicio do download
+- Restruturação do código
+
+v0.0.5
+- Escolha de Filmes e Series por Genero
+- Escolha de Filmes e Series por rating IMDB
+- Metadados nos Filmes e Series
+
+v0.0.4
+- Download Filmes ou Serie com legendas
+- Definir Vistas nas Configurações do Addon
+- Definir secção Kids ou Normal ou até mesmo Ambos na Configuração do Menu - Mafarricos
+
+v0.0.3
+- Secção KIDS
+- Funcionalidade de Pesquisa
+
+v0.0.2
+- Permite ver filmes e séries
+- Divide os episódios das séries por temporadas
+
+v0.0.1
+- Primeira Versão

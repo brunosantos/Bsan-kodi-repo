@@ -42,8 +42,9 @@
                 necessária conta no site para aceder aos conteúdos do addon.
             </description>
             <disclaimer lang="en">Os autores não alojam nem distribuem nenhum do conteúdo acessível a partir deste
-                addon. Os autores não têm qualquer afiliação com o site em questão. O addon não contem nenhuma
-                ferramenta de tracking.
+                addon. Os
+                autores não têm qualquer afiliação com o site em questão. O addon não contem nenhuma ferramenta de
+                tracking.
             </disclaimer>
             <website>http://www.ratotv.net/</website>
             <platform>all</platform>
@@ -68,6 +69,31 @@
             <description></description>
             <disclaimer></disclaimer>
             <platform>all</platform>
+        </extension>
+    </addon>
+
+    <addon id="plugin.video.tugaio" name="Tuga.io" provider-name="xsteal" version="0.1.1">
+        <requires>
+            <import addon="xbmc.python" version="2.14.0"/>
+            <import addon="script.module.beautifulsoup4" version="4.3.2"/>
+        </requires>
+        <extension library="addon.py" point="xbmc.python.pluginsource">
+            <provides>video</provides>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en">Tuga.io</summary>
+            <description lang="en">Addon site tuga.io</description>
+            <description lang="en">Filmes e series no Kodi em HD.</description>
+            <disclaimer lang="en">Como desenvolvedor do addon, nada tenho a haver com site. O site pode ser acedido por
+                um browser. Limito-me a ler o seu conteúdo disponibilizado e converter em addon.
+            </disclaimer>
+            <language></language>
+            <platform>all</platform>
+            <license></license>
+            <forum></forum>
+            <website></website>
+            <email></email>
+            <source></source>
         </extension>
     </addon>
 
