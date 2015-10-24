@@ -36,7 +36,7 @@ addon = Addon(addon_id)
 datapath = addon.get_profile().decode("utf-8")
 ADDON = selfAddon
 
-base_url = 'http://ratotv.net/'
+base_url = 'http://ratotv.xyz/'
 escolher_qualidade = xbmcgui.Dialog().select
 mensagemok = xbmcgui.Dialog().ok
 progresso = xbmcgui.DialogProgress()
@@ -62,14 +62,14 @@ def Menu_principal():
         addDir_reg_menu('Animes', base_url, 81, artfolder + 'animes.jpg', True)
         addDir_reg_menu('Pesquisar', 'url', 4, artfolder + 'pesquisa.jpg', True)
         addDir_reg_menu('', '', '', addonfolder + 'logo.png', False)
-        addDir_reg_menu('Favoritos', 'http://ratotv.net/favorites/page/1/', 15, artfolder + 'favoritos.jpg', True)
+        addDir_reg_menu('Favoritos', 'http://ratotv.xyz/favorites/page/1/', 15, artfolder + 'favoritos.jpg', True)
         addDir_reg_menu('Filmes Vistos', base_url + 'watchlist', 59, artfolder + 'filmes-vistos-site.jpg', True)
         addDir_reg_menu('Séries a seguir', base_url + 'index.php?cstart=1&do=cat&category=tvshows', 26,
                         artfolder + 'series-a-seguir.jpg', True)
         addDir_reg_menu('Tendências (Trakt)', base_url, 50, artfolder + 'favoritos.jpg', True)
         addDir_reg_menu('Géneros', 'url', 5, artfolder + 'categorias.jpg', True)
         addDir_reg_menu('Ano', 'url', 42, artfolder + 'ano.jpg', True)
-        addDir_reg_menu('Pedidos', "http://ratotv.net/requests/page/1/", 33, artfolder + 'contactar.jpg', True)
+        addDir_reg_menu('Pedidos', "http://ratotv.xyz/requests/page/1/", 33, artfolder + 'contactar.jpg', True)
         addDir_reg_menu('Definições', 'url', 9, artfolder + 'definicoes.jpg', False)
         addDir_reg_menu('', '', '', addonfolder + 'logo.png', False)
         mensagens_conta()
@@ -821,7 +821,7 @@ def rato_tv_get_media_info(html_trunk):
                                                                                                        '').replace(
                 '</div>', ''))
     # print "Rating é:",match
-    match = re.compile('<a href="http://ratotv.net/.+?">(.+?)</a></li>').findall(html_trunk)
+    match = re.compile('<a href="http://ratotv.xyz/.+?">(.+?)</a></li>').findall(html_trunk)
     # print "Filme ou Série",match
     for categoria in match:
         if categoria == 'Filmes':
@@ -848,7 +848,7 @@ def rato_tv_get_media_info(html_trunk):
     if match:
         lista_de_genero = match[0].replace(" ", "").split(",")
         for genre in lista_de_genero: data_dict['Genre'] += genre + ' '
-    match = re.compile('<a href="http://ratotv.net/xfsearch/.D/">(.D)</a>').findall(html_trunk)
+    match = re.compile('<a href="http://ratotv.xyz/xfsearch/.D/">(.D)</a>').findall(html_trunk)
     HD = None
     if match:
         if match[0] == 'HD':
@@ -1016,7 +1016,7 @@ def check_login():
             match = ''
             return resultado
         if match == []:
-            match = re.compile('href="http://ratotv.net/user/(.+?)/">Perfil').findall(html_source)
+            match = re.compile('href="http://ratotv.xyz/user/(.+?)/">Perfil').findall(html_source)
             if match == []:
                 resultado = False
                 mensagemok('RatoTV', 'Username e/ou Password incorrectos.')
@@ -1145,7 +1145,7 @@ def ler_comentarios(url, todos_os_comentarios):
         return mensagemok('RatoTV', 'Não existem comentários ao filme.')
     else:
         for comentario in match:
-            autor = re.compile('href="http://ratotv.net/user/.+?">(.+?)</a>').findall(comentario)
+            autor = re.compile('href="http://ratotv.xyz/user/.+?">(.+?)</a>').findall(comentario)
             data = re.compile('<h5>(.+?)</h5>').findall(comentario)
             texto = re.findall("<div id=\'comm-id.+?\'>(.*?)</div>", comentario, re.DOTALL)
             texto = texto[0].replace('<br />', '')
@@ -1904,18 +1904,18 @@ def menu_pedidos(url):
         img_titulo = re.compile('src="(.+?)" alt="(.+?)"').findall(trunk)
         pedidos = re.compile('style="cursor: default;">(.+?)</b>').findall(trunk)
         id_pedido = re.compile("javascript:add_request\('(.+?)'\)").findall(trunk)
-        img = img_titulo[0][0].replace("http//www.ratotv.net/", base_url)
+        img = img_titulo[0][0].replace("http//www.ratotv.xyz/", base_url)
         try:
             addDir_reg_menu(img_titulo[0][1] + "[COLOR green] (" + pedidos[0] + " pedidos)[/COLOR]", id_pedido[0], 34,
                             img, False, fanart=fanart_rato_tv)
         except:
             pass
-    match = re.compile('<a href="http://ratotv.net/requests/page/.+?/">(.+?)</a>').findall(html_source)
+    match = re.compile('<a href="http://ratotv.xyz/requests/page/.+?/">(.+?)</a>').findall(html_source)
     pag_total = match[-1]
     try:
         addDir_reg_menu(
             "[COLOR green]Página " + str(pag_actual) + "/" + str(pag_total) + " |[B] Seguinte >>[/COLOR][/B]",
-            'http://ratotv.net/requests/page/' + str(int(pag_actual) + 1) + '/', 33, artfolder + 'seta.jpg', True,
+            'http://ratotv.xyz/requests/page/' + str(int(pag_actual) + 1) + '/', 33, artfolder + 'seta.jpg', True,
             fanart=fanart_rato_tv)
     except:
         pass
@@ -1975,7 +1975,7 @@ def pedir_imdb(imdb):
     post_page(base_url, selfAddon.getSetting('login_name'), selfAddon.getSetting('login_password'))
     if "http" not in imdb: imdb = "http://www.imdb.com/title/" + imdb + "/"
     mydata = [('film_request', 'yes'), ('req_url', imdb)]
-    source = post_page_free("http://ratotv.net/engine/ajax/mws-film.ajax.php", mydata)
+    source = post_page_free("http://ratotv.xyz/engine/ajax/mws-film.ajax.php", mydata)
     if '"html":' in source:
         xbmc.executebuiltin(
             "XBMC.Notification(RatoTV," + "Pedido efectuado com sucesso." + "," + "6000" + "," + addonfolder + "/icon.png)")
@@ -1991,7 +1991,7 @@ def pedir_id(url):
     urllib2.install_opener(opener)
     post_page(base_url, selfAddon.getSetting('login_name'), selfAddon.getSetting('login_password'))
     mydata = [('film_request', 'yes'), ('add_req', str(url))]
-    source = post_page_free("http://ratotv.net/engine/ajax/mws-film.ajax.php", mydata);
+    source = post_page_free("http://ratotv.xyz/engine/ajax/mws-film.ajax.php", mydata);
     print source
     if '"result":"ok"}' in source:
         xbmc.executebuiltin(
@@ -2009,7 +2009,7 @@ def pedir_id(url):
 
 def mensagens_conta():
     try:
-        html_source = post_page("http://ratotv.net/index.php?do=pm&folder=inbox", selfAddon.getSetting('login_name'),
+        html_source = post_page("http://ratotv.xyz/index.php?do=pm&folder=inbox", selfAddon.getSetting('login_name'),
                                 selfAddon.getSetting('login_password'))
     except:
         html_source = ""
@@ -2029,7 +2029,7 @@ def mensagens_conta():
 
 def listar_pms():
     try:
-        html_source = post_page("http://ratotv.net/index.php?do=pm&folder=inbox", selfAddon.getSetting('login_name'),
+        html_source = post_page("http://ratotv.xyz/index.php?do=pm&folder=inbox", selfAddon.getSetting('login_name'),
                                 selfAddon.getSetting('login_password'))
     except:
         html_source = ""
@@ -2070,7 +2070,7 @@ def apagar_pm(url):
     for letra in url:
         if letra.isdigit(): pm_id += letra
     try:
-        html_source = post_page("http://ratotv.net/index.php?do=pm&doaction=readpm&pmid=" + pm_id,
+        html_source = post_page("http://ratotv.xyz/index.php?do=pm&doaction=readpm&pmid=" + pm_id,
                                 selfAddon.getSetting('login_name'), selfAddon.getSetting('login_password'))
     except:
         html_source
@@ -3138,7 +3138,7 @@ def play_from_outside(name, url):
     except:
         ok = mensagemok('RatoTV', 'Não conseguiu abrir o site!'), sys.exit(0)
     match = re.compile(
-        '<img src="/templates/ratotvv2/dleimages/comments-img2.png"/><a href="http://ratotv.net/(.+?)/">.+?</a>').findall(
+        '<img src="/templates/ratotvv2/dleimages/comments-img2.png"/><a href="http://ratotv.xyz/(.+?)/">.+?</a>').findall(
         html_source)
     if match[0] == 'tvshows':
         proceed = False
