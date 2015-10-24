@@ -62,14 +62,14 @@ def Menu_principal():
         addDir_reg_menu('Animes', base_url, 81, artfolder + 'animes.jpg', True)
         addDir_reg_menu('Pesquisar', 'url', 4, artfolder + 'pesquisa.jpg', True)
         addDir_reg_menu('', '', '', addonfolder + 'logo.png', False)
-        addDir_reg_menu('Favoritos', 'http://ratotv.xyz/favorites/page/1/', 15, artfolder + 'favoritos.jpg', True)
+        addDir_reg_menu('Favoritos', base_url + '/favorites/page/1/', 15, artfolder + 'favoritos.jpg', True)
         addDir_reg_menu('Filmes Vistos', base_url + 'watchlist', 59, artfolder + 'filmes-vistos-site.jpg', True)
         addDir_reg_menu('Séries a seguir', base_url + 'index.php?cstart=1&do=cat&category=tvshows', 26,
                         artfolder + 'series-a-seguir.jpg', True)
         addDir_reg_menu('Tendências (Trakt)', base_url, 50, artfolder + 'favoritos.jpg', True)
         addDir_reg_menu('Géneros', 'url', 5, artfolder + 'categorias.jpg', True)
         addDir_reg_menu('Ano', 'url', 42, artfolder + 'ano.jpg', True)
-        addDir_reg_menu('Pedidos', "http://ratotv.xyz/requests/page/1/", 33, artfolder + 'contactar.jpg', True)
+        addDir_reg_menu('Pedidos', base_url + "/requests/page/1/", 33, artfolder + 'contactar.jpg', True)
         addDir_reg_menu('Definições', 'url', 9, artfolder + 'definicoes.jpg', False)
         addDir_reg_menu('', '', '', addonfolder + 'logo.png', False)
         mensagens_conta()
@@ -1904,7 +1904,7 @@ def menu_pedidos(url):
         img_titulo = re.compile('src="(.+?)" alt="(.+?)"').findall(trunk)
         pedidos = re.compile('style="cursor: default;">(.+?)</b>').findall(trunk)
         id_pedido = re.compile("javascript:add_request\('(.+?)'\)").findall(trunk)
-        img = img_titulo[0][0].replace("http//www.ratotv.xyz/", base_url)
+        img = img_titulo[0][0].replace(base_url, base_url)
         try:
             addDir_reg_menu(img_titulo[0][1] + "[COLOR green] (" + pedidos[0] + " pedidos)[/COLOR]", id_pedido[0], 34,
                             img, False, fanart=fanart_rato_tv)
@@ -1915,7 +1915,7 @@ def menu_pedidos(url):
     try:
         addDir_reg_menu(
             "[COLOR green]Página " + str(pag_actual) + "/" + str(pag_total) + " |[B] Seguinte >>[/COLOR][/B]",
-            'http://ratotv.xyz/requests/page/' + str(int(pag_actual) + 1) + '/', 33, artfolder + 'seta.jpg', True,
+            base_url + '/requests/page/' + str(int(pag_actual) + 1) + '/', 33, artfolder + 'seta.jpg', True,
             fanart=fanart_rato_tv)
     except:
         pass
