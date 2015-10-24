@@ -22,7 +22,7 @@ www.desportogratis.com, www.rtp.pt, www.tugastream.com, www.tvfree.me, www.tvgen
     </extension>
 </addon>
 
-<addon id="plugin.video.ratotv" name="RatoTv" version="2.1.9" provider-name="RatoTV.net">
+    <addon id="plugin.video.ratotv" name="RatoTv" version="2.1.10" provider-name="RatoTV.net">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.t0mm0.common" version="2.1.1"/>
@@ -37,13 +37,13 @@ www.desportogratis.com, www.rtp.pt, www.tugastream.com, www.tvfree.me, www.tvgen
         <language>pt</language>
         <platform>all</platform>
         <summary lang="en">Rato TV</summary>
-        <description lang="en">Filmes e series no Kodi em HD. Visita o site oficial em http://www.ratotv.net. É
+        <description lang="en">Filmes e series no Kodi em HD. Visita o site oficial em http://www.ratotv.xyz. É
             necessária conta no site para aceder aos conteúdos do addon.
         </description>
         <disclaimer lang="en">Os autores não alojam nem distribuem nenhum do conteúdo acessível a partir deste addon. Os
             autores não têm qualquer afiliação com o site em questão. O addon não contem nenhuma ferramenta de tracking.
         </disclaimer>
-        <website>http://www.ratotv.xyx/</website>
+        <website>http://www.ratotv.xyz/</website>
         <platform>all</platform>
     </extension>
 </addon>
