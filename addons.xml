@@ -1,114 +1,110 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-    <addon id="plugin.video.tvtuga"
-           name="TV Portuguesa"
-           version="0.2.0"
-           provider-name="bsan">
-        <requires>
-            <import addon="xbmc.python" version="2.1.0"/>
-            <import addon="script.module.urlresolver" version="1.0.5"/>
-            <import addon="script.module.requests"/>
-        </requires>
-        <extension point="xbmc.python.pluginsource" library="default.py">
-            <provides>video</provides>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-            <summary>Ver canais de TV portugueses e radios no XBMC</summary>
-            <description>Ve os teus canais portugueses favoritos e ouve radios no XBMC.
-                Visita os sites oficiais.
-                www.desportogratis.com, www.rtp.pt, www.tugastream.com, www.tvfree.me, www.tvgente.eu, www.tvdez.com
-            </description>
-            <disclaimer>O autor deste addon NAO e responsavel pelo conteudo dos streams.</disclaimer>
-            <platform>all</platform>
-        </extension>
-    </addon>
+<addon id="plugin.video.tvtuga"
+       name="TV Portuguesa"
+       version="0.2.0"
+       provider-name="bsan">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.urlresolver"  version="1.0.5"/>
+		<import addon="script.module.requests"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Ver canais de TV portugueses e radios no XBMC</summary>
+        <description>Ve os teus canais portugueses favoritos e ouve radios no XBMC.
+Visita os sites oficiais.
+www.desportogratis.com, www.rtp.pt, www.tugastream.com, www.tvfree.me, www.tvgente.eu, www.tvdez.com</description>
+        <disclaimer>O autor deste addon NAO e responsavel pelo conteudo dos streams.</disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>
 
-    <addon id="plugin.video.ratotv" name="RatoTv" version="2.1.8" provider-name="RatoTV.net">
-        <requires>
-            <import addon="xbmc.python" version="2.1.0"/>
-            <import addon="script.module.t0mm0.common" version="2.1.1"/>
-            <import addon="plugin.video.youtube" version="2.9.2"/>
-        </requires>
-        <extension point="xbmc.python.pluginsource" library="addon.py">
-            <provides>video</provides>
-        </extension>
-        <extension point="xbmc.service" library="service.py" start="startup">
-        </extension>
-        <extension point="xbmc.addon.metadata">
-            <language>pt</language>
-            <platform>all</platform>
-            <summary lang="en">Rato TV</summary>
-            <description lang="en">Filmes e series no Kodi em HD. Visita o site oficial em http://www.ratotv.net. É
-                necessária conta no site para aceder aos conteúdos do addon.
-            </description>
-            <disclaimer lang="en">Os autores não alojam nem distribuem nenhum do conteúdo acessível a partir deste
-                addon. Os
-                autores não têm qualquer afiliação com o site em questão. O addon não contem nenhuma ferramenta de
-                tracking.
-            </disclaimer>
-            <website>http://www.ratotv.net/</website>
-            <platform>all</platform>
-        </extension>
-    </addon>
+<addon id="plugin.video.ratotv" name="RatoTv" version="2.1.9" provider-name="RatoTV.net">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.t0mm0.common" version="2.1.1"/>
+        <import addon="plugin.video.youtube" version="2.9.2"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup">
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <language>pt</language>
+        <platform>all</platform>
+        <summary lang="en">Rato TV</summary>
+        <description lang="en">Filmes e series no Kodi em HD. Visita o site oficial em http://www.ratotv.net. É
+            necessária conta no site para aceder aos conteúdos do addon.
+        </description>
+        <disclaimer lang="en">Os autores não alojam nem distribuem nenhum do conteúdo acessível a partir deste addon. Os
+            autores não têm qualquer afiliação com o site em questão. O addon não contem nenhuma ferramenta de tracking.
+        </disclaimer>
+        <website>http://www.ratotv.net/</website>
+        <platform>all</platform>
+    </extension>
+</addon>
 
-    <addon id="plugin.video.sparrowtv"
-           name="Sparrow TV"
-           version="0.0.3"
-           provider-name="bsan">
-        <requires>
-            <import addon="xbmc.python" version="2.1.0"/>
-            <import addon="script.module.pytz"/>
-            <import addon="script.module.urlresolver" version="1.0.5"/>
-            <import addon="script.module.requests"/>
-        </requires>
-        <extension point="xbmc.python.pluginsource" library="default.py">
-            <provides>video</provides>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-            <summary></summary>
-            <description></description>
-            <disclaimer></disclaimer>
-            <platform>all</platform>
-        </extension>
-    </addon>
+<addon id="plugin.video.sparrowtv"
+       name="Sparrow TV"
+       version="0.0.3"
+       provider-name="bsan">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.pytz"/>
+		<import addon="script.module.urlresolver"  version="1.0.5"/>
+		<import addon="script.module.requests"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary></summary>
+        <description></description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>
 
-    <addon id="plugin.video.tugaio" name="Tuga.io" provider-name="xsteal" version="0.1.1">
-        <requires>
-            <import addon="xbmc.python" version="2.14.0"/>
-            <import addon="script.module.beautifulsoup4" version="4.3.2"/>
-        </requires>
-        <extension library="addon.py" point="xbmc.python.pluginsource">
-            <provides>video</provides>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-            <summary lang="en">Tuga.io</summary>
-            <description lang="en">Addon site tuga.io</description>
-            <description lang="en">Filmes e series no Kodi em HD.</description>
-            <disclaimer lang="en">Como desenvolvedor do addon, nada tenho a haver com site. O site pode ser acedido por
-                um
-                browser. Limito-me a ler o seu conteúdo disponibilizado e converter em addon.
-            </disclaimer>
-            <language></language>
-            <platform>all</platform>
-            <license></license>
-            <forum></forum>
-            <website></website>
-            <email></email>
-            <source></source>
-        </extension>
-    </addon>
+<addon id="plugin.video.tugaio" name="Tuga.io" provider-name="xsteal" version="0.1.1">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+        <import addon="script.module.beautifulsoup4" version="4.3.2"/>
+    </requires>
+    <extension library="addon.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Tuga.io</summary>
+        <description lang="en">Addon site tuga.io</description>
+        <description lang="en">Filmes e series no Kodi em HD.</description>
+        <disclaimer lang="en">Como desenvolvedor do addon, nada tenho a haver com site. O site pode ser acedido por um
+            browser. Limito-me a ler o seu conteúdo disponibilizado e converter em addon.
+        </disclaimer>
+        <language></language>
+        <platform>all</platform>
+        <license></license>
+        <forum></forum>
+        <website></website>
+        <email></email>
+        <source></source>
+    </extension>
+</addon>
 
-    <addon id="repository.kodi.caribbean" name="Caribbean repository" version="0.0.4" provider-name="bsan">
-        <extension point="xbmc.addon.repository" name="Caribbean Add-on Repository">
-            <info compressed="false">http://raw.github.com/brunosantos/Bsan-kodi-repo/master/addons.xml</info>
-            <checksum>http://raw.github.com/brunosantos/Bsan-kodi-repo/master/addons.xml.md5</checksum>
-            <datadir zip="true">http://raw.github.com/brunosantos/Bsan-kodi-repo/master/repo/</datadir>
-        </extension>
-        <extension point="xbmc.addon.metadata">
+<addon id="repository.kodi.caribbean" name="Caribbean repository" version="0.0.4" provider-name="bsan">
+    <extension point="xbmc.addon.repository" name="Caribbean Add-on Repository">
+        <info compressed="false">http://raw.github.com/brunosantos/Bsan-kodi-repo/master/addons.xml</info>
+        <checksum>http://raw.github.com/brunosantos/Bsan-kodi-repo/master/addons.xml.md5</checksum>
+        <datadir zip="true">http://raw.github.com/brunosantos/Bsan-kodi-repo/master/repo/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
         <summary>Caribbean Addon</summary>
         <description>Stuff and things</description>
-            <disclaimer></disclaimer>
-            <platform>all</platform>
-        </extension>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+    </extension>
 </addon>
 </addons>
