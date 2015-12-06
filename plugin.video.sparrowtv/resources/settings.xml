@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-    <setting id="my_setting" type="bool" default="true" label="My Setting"/>
+    <setting id="load_backup" type="bool" default="false" label="load backup"/>
+    <setting id="use_sonar" type="bool" default="false" label="use sonar"/>
 </settings>
