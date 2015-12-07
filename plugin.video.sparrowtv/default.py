@@ -3,30 +3,28 @@
 # import urlparse
 # import xbmcgui
 # import xbmcplugin
-# import xbmcaddon
+import xbmc, xbmcaddon, xbmcgui, xbmcplugin, urllib, urllib2, os, re, sys
+from resources.lib.common_addon import Addon
+import urlparse
 
 # base_url = sys.argv[0]
 # addon_handle = int(sys.argv[1])
 # args = urlparse.parse_qs(sys.argv[2][1:])
 #
-# my_addon = xbmcaddon.Addon()
-# use_sonar = my_addon.getSetting('use_sonar')
-# #my_addon.setSetting('use_sonar', 'false')
-#
-# load_backup = my_addon.getSetting('load_backup')
-# #my_addon.setSetting('load_backup', 'false')
-#
-# username = 'trial'
-# password = 'trial_221'
-# source = 'http://tvdasogra.com:8880/get.php?username=trial&password=trial_221&type=m3u&output=mpegts'
-# backupSource = 'https://dl.dropboxusercontent.com/s/35q79t3m9cwuqdj/tvdasograv2.m3u'
+my_addon = xbmcaddon.Addon()
+use_sonar = my_addon.getSetting('use_sonar') == 'true'
+# my_addon.setSetting('use_sonar', 'false')
+
+load_backup = my_addon.getSetting('load_backup') == 'true'
+# my_addon.setSetting('load_backup', 'false')
+
+username = 'trial'
+password = 'trial_221'
+source = 'http://tvdasogra.com:8880/get.php?username=' + username + '&password=' + password + '&type=m3u&output=mpegts'
+backupSource = 'https://dl.dropboxusercontent.com/s/35q79t3m9cwuqdj/tvdasograv2.m3u'
 
 #
 # xbmcplugin.setContent(addon_handle, 'movies')
-
-import xbmc, xbmcaddon, xbmcgui, xbmcplugin, urllib, urllib2, os, re, sys
-from resources.lib.common_addon import Addon
-import urlparse
 
 base_url = sys.argv[0]
 addon_handle = int(sys.argv[1])
@@ -46,18 +44,18 @@ def appendPydevRemoteDebugger():
         sys.exit(1)
 
 
-# appendPydevRemoteDebugger()
+appendPydevRemoteDebugger()
 
-addon_id = 'plugin.video.direto'
+addon_id = 'plugin.video.sparrowtv'
 addon = Addon(addon_id, sys.argv)
 icon = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'icon.png'))
 
 
 def Index():
-    # username
-    # source = 'http://tvdasogra.com:8880/get.php?username=trial&password=trial_221&type=m3u&output=mpegts'
-    GetLinks('https://dl.dropboxusercontent.com/s/35q79t3m9cwuqdj/tvdasograv2.m3u')
-
+    if load_backup:
+        GetLinks(backupSource)
+    else:
+        GetLinks(source)
 
 # def GetLinksFromPlx(url):
 #     link = open_url(url)
