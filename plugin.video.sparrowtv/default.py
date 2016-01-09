@@ -23,9 +23,10 @@ password = my_addon.getSetting('m3u_pwd')
 
 if use_sonar:
     from m3uSonar import GetPwd
-
     password = GetPwd()
     my_addon.setSetting('m3u_pwd', password)
+    my_addon.setSetting('use_sonar', 0)
+
 source = 'http://tvdasogra.com:8880/get.php?username=' + username + '&password=' + password + '&type=m3u&output=mpegts'
 backupSource = 'https://dl.dropboxusercontent.com/s/35q79t3m9cwuqdj/tvdasograv2.m3u'
 
