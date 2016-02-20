@@ -15,6 +15,7 @@ def GetPwd():
     for num in range(200, 500):
         url = "http://tvdasogra.com:8880/get.php?username=trial&password=trial_" + str(num).zfill(
             3) + "&type=m3u&output=mpegts"
+        
         link = get_response(url)
         if len(link) > 0:
             return "trial_" + str(num).zfill(3)
