@@ -38,11 +38,13 @@ www.desportogratis.com, www.rtp.pt, www.tugastream.com, www.tvfree.me, www.tvgen
             <platform>all</platform>
             <summary lang="en">Rato TV</summary>
             <description lang="en">Filmes e series no Kodi em HD. Visita o site oficial em http://www.ratotv.net. É
-                necessária conta no site para aceder aos conteúdos do addon.
+                necessária
+                conta no site para aceder aos conteúdos do addon.
             </description>
             <disclaimer lang="en">Os autores não alojam nem distribuem nenhum do conteúdo acessível a partir deste
-                addon. Os autores não têm qualquer afiliação com o site em questão. O addon não contem nenhuma
-                ferramenta de tracking.
+                addon. Os
+                autores não têm qualquer afiliação com o site em questão. O addon não contem nenhuma ferramenta de
+                tracking.
             </disclaimer>
             <website>http://www.ratotv.net/</website>
             <platform>all</platform>
