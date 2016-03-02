@@ -18,7 +18,7 @@ use_sonar = my_addon.getSetting('use_sonar') == 'true'
 load_backup = my_addon.getSetting('load_backup') == 'true'
 # my_addon.setSetting('load_backup', 'false')
 
-username = 'trial'
+username = my_addon.getSetting('m3u_usrname')  # 'trial'
 password = my_addon.getSetting('m3u_pwd')
 
 if use_sonar:

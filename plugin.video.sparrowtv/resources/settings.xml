@@ -2,5 +2,6 @@
 <settings>
     <setting id="load_backup" type="bool" default="false" label="load backup"/>
     <setting id="use_sonar" type="bool" default="false" label="use sonar"/>
+    <setting id="m3u_usrname" type="text" default="trial2" label="m3u username"/>
     <setting id="m3u_pwd" type="text" default="trial_221" label="m3u password"/>
 </settings>
