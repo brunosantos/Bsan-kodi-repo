@@ -175,9 +175,7 @@
                 <onup>50000</onup>
                 <onleft>11032</onleft>
                 <onright>11034</onright>
-                <visible allowhiddenfocus="true">
-                    !Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)
-                </visible>
+                <visible allowhiddenfocus="true">!Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)</visible>
                 <animation effect="zoom" end="115,115" center="auto" time="100">focus</animation>
             </control>
 
@@ -206,9 +204,7 @@
                 <onup>50000</onup>
                 <onleft>11033</onleft>
                 <onright>11035</onright>
-                <visible allowhiddenfocus="true">
-                    !Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)|!Control.HasFocus(11033)
-                </visible>
+                <visible allowhiddenfocus="true">!Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)|!Control.HasFocus(11033)</visible>
                 <animation effect="zoom" end="115,115" center="auto" time="100">focus</animation>
             </control>
 
@@ -219,9 +215,7 @@
                 <width>35</width>
                 <height>35</height>
                 <texture>5_b.png</texture>
-                <visible>
-                    Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)
-                </visible>
+                <visible>Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)</visible>
             </control>
 
             <control type="button" id="11035">
@@ -239,9 +233,7 @@
                 <onup>50000</onup>
                 <onleft>11034</onleft>
                 <onright>11036</onright>
-                <visible allowhiddenfocus="true">
-                    !Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)|!Control.HasFocus(11033)|!Control.HasFocus(11034)
-                </visible>
+                <visible allowhiddenfocus="true">!Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)|!Control.HasFocus(11033)|!Control.HasFocus(11034)</visible>
                 <animation effect="zoom" end="115,115" center="auto" time="100">focus</animation>
             </control>
 
@@ -252,9 +244,7 @@
                 <width>35</width>
                 <height>35</height>
                 <texture>6_b.png</texture>
-                <visible>
-                    Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)|Control.HasFocus(11034)
-                </visible>
+                <visible>Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)|Control.HasFocus(11034)</visible>
             </control>
 
             <control type="button" id="11036">
@@ -272,9 +262,7 @@
                 <onup>50000</onup>
                 <onleft>11035</onleft>
                 <onright>11037</onright>
-                <visible allowhiddenfocus="true">
-                    !Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)|!Control.HasFocus(11033)|!Control.HasFocus(11034)|!Control.HasFocus(11035)
-                </visible>
+                <visible allowhiddenfocus="true">!Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)|!Control.HasFocus(11033)|!Control.HasFocus(11034)|!Control.HasFocus(11035)</visible>
                 <animation effect="zoom" end="115,115" center="auto" time="100">focus</animation>
             </control>
 
@@ -285,9 +273,7 @@
                 <width>35</width>
                 <height>35</height>
                 <texture>7_b.png</texture>
-                <visible>
-                    Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)|Control.HasFocus(11034)|Control.HasFocus(11035)
-                </visible>
+                <visible>Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)|Control.HasFocus(11034)|Control.HasFocus(11035)</visible>
             </control>
 
             <control type="button" id="11037">
@@ -305,9 +291,7 @@
                 <onup>50000</onup>
                 <onleft>11036</onleft>
                 <onright>11038</onright>
-                <visible allowhiddenfocus="true">
-                    !Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)|!Control.HasFocus(11033)|!Control.HasFocus(11034)|!Control.HasFocus(11035)|!Control.HasFocus(11036)
-                </visible>
+                <visible allowhiddenfocus="true">!Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)|!Control.HasFocus(11033)|!Control.HasFocus(11034)|!Control.HasFocus(11035)|!Control.HasFocus(11036)</visible>
                 <animation effect="zoom" end="115,115" center="auto" time="100">focus</animation>
             </control>
 
@@ -318,9 +302,7 @@
                 <width>35</width>
                 <height>35</height>
                 <texture>8_b.png</texture>
-                <visible>
-                    Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)|Control.HasFocus(11034)|Control.HasFocus(11035)|Control.HasFocus(11036)
-                </visible>
+                <visible>Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)|Control.HasFocus(11034)|Control.HasFocus(11035)|Control.HasFocus(11036)</visible>
             </control>
 
             <control type="button" id="11038">
@@ -338,9 +320,7 @@
                 <onup>50000</onup>
                 <onleft>11037</onleft>
                 <onright>11039</onright>
-                <visible allowhiddenfocus="true">
-                    !Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)|!Control.HasFocus(11033)|!Control.HasFocus(11034)|!Control.HasFocus(11035)|!Control.HasFocus(11036)|!Control.HasFocus(11037)
-                </visible>
+                <visible allowhiddenfocus="true">!Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)|!Control.HasFocus(11033)|!Control.HasFocus(11034)|!Control.HasFocus(11035)|!Control.HasFocus(11036)|!Control.HasFocus(11037)</visible>
                 <animation effect="zoom" end="115,115" center="auto" time="100">focus</animation>
             </control>
 
@@ -351,9 +331,7 @@
                 <width>35</width>
                 <height>35</height>
                 <texture>9_b.png</texture>
-                <visible>
-                    Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)|Control.HasFocus(11034)|Control.HasFocus(11035)|Control.HasFocus(11036)|Control.HasFocus(11037)
-                </visible>
+                <visible>Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)|Control.HasFocus(11034)|Control.HasFocus(11035)|Control.HasFocus(11036)|Control.HasFocus(11037)</visible>
             </control>
 
             <control type="button" id="11039">
@@ -371,9 +349,7 @@
                 <onup>50000</onup>
                 <onleft>11038</onleft>
                 <onright>11030</onright>
-                <visible allowhiddenfocus="true">
-                    !Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)|!Control.HasFocus(11033)|!Control.HasFocus(11034)|!Control.HasFocus(11035)|!Control.HasFocus(11036)|!Control.HasFocus(11037)|!Control.HasFocus(11038)
-                </visible>
+                <visible allowhiddenfocus="true">!Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)|!Control.HasFocus(11033)|!Control.HasFocus(11034)|!Control.HasFocus(11035)|!Control.HasFocus(11036)|!Control.HasFocus(11037)|!Control.HasFocus(11038)</visible>
                 <animation effect="zoom" end="115,115" center="auto" time="100">focus</animation>
             </control>
 
@@ -384,9 +360,7 @@
                 <width>35</width>
                 <height>35</height>
                 <texture>10_b.png</texture>
-                <visible>
-                    Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)|Control.HasFocus(11034)|Control.HasFocus(11035)|Control.HasFocus(11036)|Control.HasFocus(11037)|Control.HasFocus(11038)
-                </visible>
+                <visible>Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)|Control.HasFocus(11034)|Control.HasFocus(11035)|Control.HasFocus(11036)|Control.HasFocus(11037)|Control.HasFocus(11038)</visible>
             </control>
         </control>
 

@@ -100,42 +100,42 @@
 
         <!--ADVANCED-->
 
-        <control type="button" id="11030">
-            <description>1 Button</description>
-            <posx>130</posx>
-            <posy>180</posy>
-            <width>120</width>
-            <height>35</height>
-            <label>Opção 1</label>
-            <font>font12</font>
-            <texturefocus>button-focus.png</texturefocus>
-            <texturenofocus>button-nofocus.png</texturenofocus>
-            <align>center</align>
-            <aligny>center</aligny>
-            <ondown>50000</ondown>
-            <onup>50000</onup>
-            <onright>11031</onright>
-            <animation>focus</animation>
-        </control>
+            <control type="button" id="11030">
+                <description>1 Button</description>
+                <posx>130</posx>
+                <posy>180</posy>
+                <width>120</width>
+                <height>35</height>
+                <label>Opção 1</label>
+                <font>font12</font>
+                <texturefocus>button-focus.png</texturefocus>
+                <texturenofocus>button-nofocus.png</texturenofocus>
+                <align>center</align>
+                <aligny>center</aligny>
+                <ondown>50000</ondown>
+                <onup>50000</onup>
+                <onright>11031</onright>
+                <animation>focus</animation>
+            </control>
 
-        <control type="button" id="11031">
-            <description>2 Button</description>
-            <posx>330</posx>
-            <posy>180</posy>
-            <width>120</width>
-            <height>35</height>
-            <label>Opção 2</label>
-            <font>font12</font>
-            <texturefocus>button-focus.png</texturefocus>
-            <texturenofocus>button-nofocus.png</texturenofocus>
-            <align>center</align>
-            <aligny>center</aligny>
-            <ondown>50000</ondown>
-            <onup>50000</onup>
-            <onleft>11030</onleft>
-            <onright>11032</onright>
-            <animation>focus</animation>
-        </control>
+            <control type="button" id="11031">
+                <description>2 Button</description>
+                <posx>330</posx>
+                <posy>180</posy>
+                <width>120</width>
+                <height>35</height>
+                <label>Opção 2</label>
+                <font>font12</font>
+                <texturefocus>button-focus.png</texturefocus>
+                <texturenofocus>button-nofocus.png</texturenofocus>
+                <align>center</align>
+                <aligny>center</aligny>
+                <ondown>50000</ondown>
+                <onup>50000</onup>
+                <onleft>11030</onleft>
+                <onright>11032</onright>
+                <animation>focus</animation>
+            </control>
 
     </controls>
 
